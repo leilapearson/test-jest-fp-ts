@@ -1,6 +1,6 @@
 {
   "name": "test-jest-fp-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Package to test @relmify/jest-fp-ts configuration",
   "main": "./out/src/main.js",
   "typings": "./out/src/main.d.ts",
@@ -20,7 +20,8 @@
     "clean:jest": "jest --clear-cache --bail 0",
     "build": "tsc -p ./",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint:check": "eslint ./src global.d.ts --ext .ts"
   },
   "author": "Leila Pearson",
   "license": "MIT",
@@ -29,9 +30,11 @@
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "fp-ts": "^2.11.9",

@@ -1,1 +1,1 @@
-console.log(`please run npm test`)
+console.log(`please run npm test`);
