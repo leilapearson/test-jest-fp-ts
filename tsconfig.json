@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "project": "./",
+    "rootDir": "./",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "out",
+    "lib": ["es6"],
+    "strict": true
+  },
+  "include": ["**/*", "global.d.ts"],
+  "exclude": ["node_modules", "out"]
+}
